@@ -5,7 +5,7 @@ FROM n8nio/n8n:latest
 USER root
 
 # Update the package list and install ffmpeg
-RUN apt-get update && apt-get install -y ffmpeg
+RUN apk update && apt-get install -y ffmpeg
 
 # Switch back to the default n8n user for security
 USER node
